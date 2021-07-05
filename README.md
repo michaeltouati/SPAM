@@ -18,7 +18,7 @@ The next release will take into account the angular scattering of protons and al
 
 Also, in order to avoid the code to be slow because of the search by dichotomy of values in tabulated functions and tables taken from the litterature, it is planned to use Cython instead.
 
-In order to use it download it and just type
+In order to use it download or clone it and just type
 
 $python3 spam.py
 
