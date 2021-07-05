@@ -1,5 +1,5 @@
 # SPAM
-Written by Dr M Touati - CLPU - September 2019
+Written by Dr M Touati - CLPU - September 2019 - 
 mtouati@clpu.es
 
 SPAM (Stopping Power of Protons and Alpha particles in Ambiant Matter) is a 
