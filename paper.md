@@ -25,7 +25,7 @@ SPAM (Stopping Power of Protons and Alpha particles in Ambiant Matter) is a pyth
 
 # Statement of need
 
-`SPAM` allows for a rapid visualization, data and image generations of the stopping power and continuous slowing down range of protons and alpha particles in ambient matter using a Python Tkinter Graphical User Interface (GUI); cf \autoref{fig:spam}. The next version release will also take into account the angular scattering of protons and alpha particles in ambient matter by using a Monte-Carlo approach based on the multiple binary collision model of `@Moliere:1947`, `@Moliere:1948`.
+`SPAM` allows for a rapid visualization, data and image generations of the stopping power and continuous slowing down range of protons and alpha particles in ambient matter using a Python Tkinter Graphical User Interface (GUI); cf \autoref{fig:spam}. The next version release will also take into account the angular scattering of protons and alpha particles in ambient matter by using a Monte-Carlo approach of a multiple binary collision model based on `@Mott:1932`, `@Moliere:1947` and/or `@Lewis:1950`.
 
 # Mathematics
 
