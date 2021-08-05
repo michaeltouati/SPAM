@@ -21,7 +21,7 @@ bibliography: paper.bib
 
 # Summary
 
-SPAM (Stopping Power of Protons and Alpha particles in Ambiant Matter) is a python tool allowing for printing and saving the stopping power and/or the Bragg's peak of protons or alpha particles in ambiant matter. The code has been benchmarked against the NIST databases (https://physics.nist.gov/PhysRefData/Star/Text/PSTAR.html and https://physics.nist.gov/PhysRefData/Star/Text/ASTAR.html).
+SPAM (Stopping Power of Protons and Alpha particles in Ambiant Matter) is a python tool using Tkinter, PIL, Numpy and Matplotlib packages that allows for visualizing, printing and saving the stopping power and/or the Bragg's peak of protons or alpha particles in ambiant matter. The code has been benchmarked against the NIST databases (https://physics.nist.gov/PhysRefData/Star/Text/PSTAR.html and https://physics.nist.gov/PhysRefData/Star/Text/ASTAR.html).
 
 # Statement of need
 
@@ -69,7 +69,7 @@ received by the target atom nucleus is small. Here,  $ \mu =  m_p m_{\mathrm{nuc
 \label{Mott}
 {\displaystyle \left ( \displaystyle \frac{ d \sigma }{ d \Omega }  \right ) }_{\mathrm{nuc}}= \displaystyle \frac{ Z^2 e^4  }{ 4 \mu^2  v^4 \sin^4{ \displaystyle \left ( \displaystyle \frac{\theta}{2} \right ) } } \displaystyle \left [ 1 - \beta^2  \sin^2{ \displaystyle \left ( \displaystyle \frac{\theta}{2} \right ) }  \right ] 
 \end{equation}
-is the differential cross section obtained by `@Mott:1932`. However, the Bethe theory (\ref{Bethe}) breaks down when the proton velocity is much lower than the orbital electron velocities. `@VarelasBiersack:1970` compiled many experimental and theoretical results `@Lindhard:1964`, `@Newton:1975`, `@AndersenZiegler:1977` and provide a fitting formula for the electronic stopping power contribution in this low velocity regime.
+is the differential cross section obtained by `@Mott:1932`. However, the Bethe theory (\autoref{eq:Bethe}) breaks down when the proton velocity is much lower than the orbital electron velocities. `@VarelasBiersack:1970` compiled many experimental and theoretical results `@Lindhard:1964`, `@Newton:1975`, `@AndersenZiegler:1977` and provide a fitting formula for the electronic stopping power contribution in this low velocity regime.
      
 In a compound, the stopping power for a proton can be approximated by a linear combination of stopping powers in each element constituents taken separately. If we note $\rho$ the compound mass density, this so-called Bragg's additivity rule `@BraggKleeman:1905` reads 
 \begin{equation}
