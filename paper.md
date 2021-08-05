@@ -25,7 +25,7 @@ SPAM (Stopping Power of Protons and Alpha particles in Ambiant Matter) is a pyth
 
 # Statement of need
 
-`SPAM` allows for a rapid visualization, data and image generations of the stopping power and continuous slowing down range of protons and alpha particles in ambient matter using a Python Tkinter Graphical User Interface (GUI); cf \autoref{fig:spam}. The next version release will also take into account the angular scattering of protons and alpha particles in ambient matter by using a Monte-Carlo approach of a multiple binary collision model based on `@Mott:1932`, `@Moliere:1947` and/or `@Lewis:1950`.
+`SPAM` allows for a rapid visualization, data and image generations of the stopping power and continuous slowing down range of protons and alpha particles in ambient matter using a Python Tkinter Graphical User Interface (GUI); cf \autoref{fig:spam}. The next version release will also take into account the angular scattering of protons and alpha particles in ambient matter by using a Monte-Carlo approach of a multiple binary collision model based on @Moliere:1947 and/or @Lewis:1950.
 
 # Mathematics
 
@@ -33,7 +33,7 @@ The stopping power for a proton in a material at ambient conditions
 \begin{equation}
 \displaystyle \frac{ d \varepsilon }{ d s} =  {\displaystyle \left ( \frac{d \varepsilon}{ds} \right ) }_{\mathrm{ele}} + { \displaystyle \left (  \frac{d \varepsilon}{ds} \right )}_{\mathrm{nuc}}
 \end{equation}
-is defined as the average energy loss $d \varepsilon$ per unit path length $ds$. Due to the huge mass of atom nuclei relative to the electron mass, the proton slowing down is mainly due to Coulomb interaction of the proton with bound atomic electrons. According to Bethe theory `@Bethe:1933`, `@BetheAshkin:1953`,  the contribution of collisions with atomic electrons can be written `@ICRU49:1993`
+is defined as the average energy loss $d \varepsilon$ per unit path length $ds$. Due to the huge mass of atom nuclei relative to the electron mass, the proton slowing down is mainly due to Coulomb interaction of the proton with bound atomic electrons. According to Bethe theory @Bethe:1933, @BetheAshkin:1953,  the contribution of collisions with atomic electrons can be written @ICRU49:1993
 \begin{equation}
  {\displaystyle \left ( \frac{d \varepsilon}{ds} \right ) }_{\mathrm{ele}}= 4 \pi \frac{ n_{e} e^{4}  L}{m_e v^{2}}.
 \label{eq:Bethe}
@@ -53,7 +53,7 @@ due to the mean excitation energy $I$ of the material where the proton is propag
 \Delta \varepsilon_\mathrm{m}=  \displaystyle  \frac{ 2 m_{e} c^{2} {\beta^{2}} }{ 1-\beta^{2} } {\displaystyle \left [ 1 + \displaystyle \frac{ 2 m_{e} }{ m_p } {\displaystyle \left (  1 - \beta^{2} \right ) }^{-  \frac{1}{2} } + {\displaystyle \left ( \displaystyle \frac{ m_{e} }{ m_p } \right )}^{2} \right ]}^{-1}
 \label{W}
 \end{equation}
-is the largest possible energy loss by the proton in a single collision with a free electron, $m_p$ the proton mass, $\beta = v / c$ and $c$ the velocity of light in vacuum. However, as the proton kinetic energy decreases while propagating in the material, the contribution to the stopping power from interactions with bound atomic electrons in the K, L, M, ...-shells decreases and a correction term $C/Z$ must be taken into account; see `@Walske:1952` for K-shell corrections, `@Khandelwal:1968` for L-shell corrections  and `@Bichsel:1991`, `Bichsel:1992`, `Bichsel:1983` for M-shell corrections and above. Also, for relativistic proton kinetic energies, the stopping power is reduced due to the resulting electrical polarization of the medium `@Fermi:1940`, `@Sternheimer:1952`, `@Sternheimer:1982`. It is called the density effect correction because it increases with the electron density.  However, considering only non-relativistic protons, this term can be neglected in all the following.  The stopping number correction $L_1$ is the Barkas correction accounting for discrepancies between negatively and positively charged projectiles `@Barkas:1956`, `@Barkas:1963`. Finally, the second stopping number correction $L_2$ provides the valid electronic stopping power expression when the proton velocity is large compared to the velocity of bound atomic electrons `@Bloch:1933`, `@Bohr:1948`. The contribution of collisions with atomic nuclei 
+is the largest possible energy loss by the proton in a single collision with a free electron, $m_p$ the proton mass, $\beta = v / c$ and $c$ the velocity of light in vacuum. However, as the proton kinetic energy decreases while propagating in the material, the contribution to the stopping power from interactions with bound atomic electrons in the K, L, M, ...-shells decreases and a correction term $C/Z$ must be taken into account; see @Walske:1952 for K-shell corrections, @Khandelwal:1968 for L-shell corrections  and @Bichsel:1991, @Bichsel:1992, @Bichsel:1983 for M-shell corrections and above. Also, for relativistic proton kinetic energies, the stopping power is reduced due to the resulting electrical polarization of the medium @Fermi:1940, @Sternheimer:1952, @Sternheimer:1982. It is called the density effect correction because it increases with the electron density.  However, considering only non-relativistic protons, this term can be neglected in all the following.  The stopping number correction $L_1$ is the Barkas correction accounting for discrepancies between negatively and positively charged projectiles @Barkas:1956, @Barkas:1963. Finally, the second stopping number correction $L_2$ provides the valid electronic stopping power expression when the proton velocity is large compared to the velocity of bound atomic electrons @Bloch:1933, @Bohr:1948. The contribution of collisions with atomic nuclei 
 \begin{equation}
 { \displaystyle \left (  \frac{d \varepsilon}{ds} \right )}_{\mathrm{nuc}} = n_{\mathrm{nuc}}  \int \Delta \varepsilon  d \sigma_{\mathrm{nuc}}
 \label{Nuclear_stopping_power}
@@ -69,9 +69,9 @@ received by the target atom nucleus is small. Here,  $\mu =  m_p m_{\mathrm{nuc}
 \label{Mott}
 {\displaystyle \left ( \displaystyle \frac{ d \sigma }{ d \Omega }  \right ) }_{\mathrm{nuc}}= \displaystyle \frac{ Z^2 e^4  }{ 4 \mu^2  v^4 \sin^4{ \displaystyle \left ( \displaystyle \frac{\theta}{2} \right ) } } \displaystyle \left [ 1 - \beta^2  \sin^2{ \displaystyle \left ( \displaystyle \frac{\theta}{2} \right ) }  \right ] 
 \end{equation}
-is the differential cross section obtained by @Mott:1932. However, the Bethe theory (\autoref{eq:Bethe}) breaks down when the proton velocity is much lower than the orbital electron velocities. `@VarelasBiersack:1970` compiled many experimental and theoretical results `@Lindhard:1964`, `@Newton:1975`, `@AndersenZiegler:1977` and provide a fitting formula for the electronic stopping power contribution in this low velocity regime.
+is the differential cross section obtained by @Mott:1932. However, the Bethe theory (\autoref{eq:Bethe}) breaks down when the proton velocity is much lower than the orbital electron velocities. @VarelasBiersack:1970 compiled many experimental and theoretical results @Lindhard:1964, @Newton:1975, @AndersenZiegler:1977 and provide a fitting formula for the electronic stopping power contribution in this low velocity regime.
      
-In a compound, the stopping power for a proton can be approximated by a linear combination of stopping powers in each element constituents taken separately. If we note $\rho$ the compound mass density, this so-called Bragg's additivity rule `@BraggKleeman:1905` reads 
+In a compound, the stopping power for a proton can be approximated by a linear combination of stopping powers in each element constituents taken separately. If we note $\rho$ the compound mass density, this so-called Bragg's additivity rule @BraggKleeman:1905 reads 
 \begin{equation}
 \displaystyle \frac{d \varepsilon}{ds} = \sum_{j} \omega_{j} {\displaystyle \left ( \displaystyle \frac{d \varepsilon}{ds} \right )}_{j}.
 \end{equation}
@@ -86,6 +86,6 @@ energy of 10 MeV.\label{fig:spam}](SPAM.png)
 
 # Acknowledgements
 
-I acknowledge the contributions from Marine Huault for having use the code in order to calibrate a HD-V2 Gafchromic films stack to proton dose response and the subsequent development of a numerical tool to characterize the 2D-resolved kinetic energy spectra of laser-generated Target Normal Sheat Acceleration protons.
+I acknowledge the contributions from Marine Huault for having use the code in order to calibrate a HD-V2 Gafchromic films stack to proton dose response and the subsequent development of a numerical tool to characterize the 2D-resolved kinetic energy spectra of laser-generated Target-Normal-Sheat-Accelerated (TNSA) protons.
 
 # References
