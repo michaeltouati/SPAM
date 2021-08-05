@@ -64,7 +64,7 @@ to the proton slowing down is much smaller since the recoil energy
 \displaystyle \frac{ 4 \varepsilon \mu^2 }{ m_p m_{\mathrm{nuc}} }\sin^{2}{ \displaystyle \left ( \displaystyle \frac{ \theta}{ 2 } \right ) }  
 \label{W_Nuclear}
 \end{equation}
-received by the target atom nucleus is small. Here,  $ \mu =  m_p m_{\mathrm{nuc}} / \displaystyle \left ( m_{\mathrm{nuc}} + m_p \right )$  and $\theta$ are respectively the effective proton mass and its deflection angle in the collision center-of-mass frame, $d \Omega = 2 \pi \sin{\theta} d \theta$ and 
+received by the target atom nucleus is small. Here,  $\mu =  m_p m_{\mathrm{nuc}} / \displaystyle \left ( m_{\mathrm{nuc}} + m_p \right )$  and $\theta$ are respectively the effective proton mass and its deflection angle in the collision center-of-mass frame, $d \Omega = 2 \pi \sin{\theta} d \theta$ and 
 \begin{equation}
 \label{Mott}
 {\displaystyle \left ( \displaystyle \frac{ d \sigma }{ d \Omega }  \right ) }_{\mathrm{nuc}}= \displaystyle \frac{ Z^2 e^4  }{ 4 \mu^2  v^4 \sin^4{ \displaystyle \left ( \displaystyle \frac{\theta}{2} \right ) } } \displaystyle \left [ 1 - \beta^2  \sin^2{ \displaystyle \left ( \displaystyle \frac{\theta}{2} \right ) }  \right ] 
@@ -75,8 +75,8 @@ In a compound, the stopping power for a proton can be approximated by a linear c
 \begin{equation}
 \displaystyle \frac{d \varepsilon}{ds} = \sum_{j} \omega_{j} {\displaystyle \left ( \displaystyle \frac{d \varepsilon}{ds} \right )}_{j}.
 \end{equation}
-Here $ {\left ( d \varepsilon / ds \right )}_j $ is the stopping power for a proton in the element constituent $j$  at ambient conditions and 
-each linear coefficient $ \omega_j = \mathrm{w}_j  \rho /  \rho_{j} $ depends on its fraction by weight $\mathrm{w}_j $ and its density $\rho_j$.  
+Here ${\left ( d \varepsilon / ds \right )}_j$ is the stopping power for a proton in the element constituent $j$  at ambient conditions and 
+each linear coefficient $\omega_j = \mathrm{w}_j  \rho /  \rho_{j}$ depends on its fraction by weight $\mathrm{w}_j$ and its density $\rho_j$.  
 
 # Figures
 
