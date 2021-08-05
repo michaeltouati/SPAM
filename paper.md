@@ -36,7 +36,7 @@ The stopping power for a proton in a material at ambient conditions
 is defined as the average energy loss $d \varepsilon$ per unit path length $ds$. Due to the huge mass of atom nuclei relative to the electron mass, the proton slowing down is mainly due to Coulomb interaction of the proton with bound atomic electrons. According to Bethe theory `@Bethe:1933`, `@BetheAshkin:1953`,  the contribution of collisions with atomic electrons can be written `@ICRU49:1993`
 \begin{equation}
  {\displaystyle \left ( \frac{d \varepsilon}{ds} \right ) }_{\mathrm{ele}}= 4 \pi \frac{ n_{e} e^{4}  L}{m_e v^{2}}.
-\label{Bethe}
+\label{eq:Bethe}
 \end{equation}
 Here,  $e$ is the elementary charge, $m_e$ is the electron mass. $n_e$ is the atomic electron density and  $v$ is the proton velocity. The main contribution to the stopping number
 \begin{equation}
