@@ -1,109 +1,91 @@
 ---
-title: 'ESVM : An Electrostatic 1D-1V Vlasov-Maxwell code for educational purpose'
+title: 'SPAM : an Open Source Code for Stopping Power of Protons and Alpha particles in Ambiant Matter'
 tags:
-  - Fortran
-  - OpenMP
   - Python
-  - Educational code
-  - Electrostatic 1D-1V collisionless plasma
-  - Poisson versus Maxwell-Ampere solver
-  - 1D-1V Vlasov equation
-  - Linear : donor_cell, Lax-Wendroff, Beam_Warming or Fromm or 
-    Non-linear : minmod, superbee, Van_Leer, MUSCL1 or MUSCL2 
-    finite volume numerical schemes for phase-space advection
+  - Tkinter Graphical User Interface (GUI)
+  - Proton stopping power
+  - Alpha particle stopping power
+  - Ambient matter
+  - Bragg peak
+  - Continuous collisional slowing down range
 authors:
   - name: Michaël J-M R TOUATI
     orcid: 0000-0001-7590-0941
-    affiliation: "1, 2, 3"
+    affiliation: "1"
 affiliations:
- - name: Department of Electrical Engineering, University of California Los Angeles, Los Angeles, CA 90095, USA
-   index: 1
- - name: Group of Lasers and Plasmas, IPFN, IST, Universidade de Lisboa, Lisbon, Portugal
-   index: 2
  - name: Centro de Láseres Pulsados de Salamanca (CLPU), Edificio M5, Parque Cientfico, C/ Adaja 8, 37185 Villamayor, Salamanca, Spain # current affiliation
-   index: 3
+   index: 1
 date: 5 August 2021
-bibliography: 
 bibliography: paper.bib
 ---
 
 # Summary
 
-The forces on stars, galaxies, and dark matter under external gravitational
-fields lead to the dynamical evolution of structures in the universe. The orbits
-of these bodies are therefore key to understanding the formation, history, and
-future state of galaxies. The field of "galactic dynamics," which aims to model
-the gravitating components of galaxies to study their structure and evolution,
-is now well-established, commonly taught, and frequently used in astronomy.
-Aside from toy problems and demonstrations, the majority of problems require
-efficient numerical tools, many of which require the same base code (e.g., for
-performing numerical orbit integration).
+SPAM (Stopping Power of Protons and Alpha particles in Ambiant Matter) is a python tool allowing for printing and saving the stopping power and/or the Bragg's peak of protons or alpha particles in ambiant matter. The code has been benchmarked against the NIST databases (https://physics.nist.gov/PhysRefData/Star/Text/PSTAR.html and https://physics.nist.gov/PhysRefData/Star/Text/ASTAR.html).
 
 # Statement of need
 
-`Gala` is an Astropy-affiliated Python package for galactic dynamics. Python
-enables wrapping low-level languages (e.g., C) for speed without losing
-flexibility or ease-of-use in the user-interface. The API for `Gala` was
-designed to provide a class-based and user-friendly interface to fast (C or
-Cython-optimized) implementations of common operations such as gravitational
-potential and force evaluation, orbit integration, dynamical transformations,
-and chaos indicators for nonlinear dynamics. `Gala` also relies heavily on and
-interfaces well with the implementations of physical units and astronomical
-coordinate systems in the `Astropy` package [@astropy] (`astropy.units` and
-`astropy.coordinates`).
-
-`Gala` was designed to be used by both astronomical researchers and by
-students in courses on gravitational dynamics or astronomy. It has already been
-used in a number of scientific publications [@Pearson:2017] and has also been
-used in graduate courses on Galactic dynamics to, e.g., provide interactive
-visualizations of textbook material [@Binney:2008]. The combination of speed,
-design, and support for Astropy functionality in `Gala` will enable exciting
-scientific explorations of forthcoming data releases from the *Gaia* mission
-[@gaia] by students and experts alike.
+`SPAM` allows for a rapid visualization, data and image generations of the stopping power and continuous slowing down range of protons and alpha particles in ambient matter using a Python Tkinter Graphical User Interface (GUI); cf \autoref{fig:spam}.
 
 # Mathematics
 
-Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
-
-Double dollars make self-standing equations:
-
-$$\Theta(x) = \left\{\begin{array}{l}
-0\textrm{ if } x < 0\cr
-1\textrm{ else}
-\end{array}\right.$$
-
-You can also use plain \LaTeX for equations
-\begin{equation}\label{eq:fourier}
-\hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
+The stopping power for a proton in a material at ambient conditions 
+\begin{equation}
+\displaystyle \frac{ d \varepsilon }{ d s} =  {\displaystyle \left ( \frac{d \varepsilon}{ds} \right ) }_{\mathrm{ele}} + { \displaystyle \left (  \frac{d \varepsilon}{ds} \right )}_{\mathrm{nuc}}
 \end{equation}
-and refer to \autoref{eq:fourier} from text.
-
-# Citations
-
-Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
-
-If you want to cite a software repository URL (e.g. something on GitHub without a preferred
-citation) then you can do it with the example BibTeX entry below for @fidgit.
-
-For a quick reference, the following citation commands can be used:
-- `@author:2001`  ->  "Author et al. (2001)"
-- `[@author:2001]` -> "(Author et al., 2001)"
-- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
+is defined as the average energy loss $d \varepsilon$ per unit path length $ds$. Due to the huge mass of atom nuclei relative to the electron mass, the proton slowing down is mainly due to Coulomb interaction of the proton with bound atomic electrons. According to Bethe theory `@Bethe:1933`, `@BetheAshkin:1953`,  the contribution of collisions with atomic electrons can be written `@ICRU49:1993`
+\begin{equation}
+ {\displaystyle \left ( \frac{d \varepsilon}{ds} \right ) }_{\mathrm{ele}}= 4 \pi \frac{ n_{e} e^{4}  L}{m_e v^{2}}.
+\label{Bethe}
+\end{equation}
+Here,  $e$ is the elementary charge, $m_e$ is the electron mass. $n_e$ is the atomic electron density and  $v$ is the proton velocity. The main contribution to the stopping number
+\begin{equation}
+L = L_0 + L_1 + L_2
+\label{L}
+\end{equation}
+is 
+\begin{equation}
+L_\mathrm{0} = \displaystyle \frac{1}{2}  \ln{ \displaystyle  \left ( \displaystyle  \frac{ 2 m_{e} c^{2} {\beta^{2}} \Delta \varepsilon_{m} }{I \displaystyle \left ( 1-\beta^{2} \right ) }  \right ) } - \beta^{2}  - \frac{C}{Z} - \frac{\delta}{2} 
+\label{Lo}
+\end{equation}
+due to the mean excitation energy $I$ of the material where the proton is propagating through. Here,
+\begin{equation}
+\Delta \varepsilon_\mathrm{m}=  \displaystyle  \frac{ 2 m_{e} c^{2} {\beta^{2}} }{ 1-\beta^{2} } {\displaystyle \left [ 1 + \displaystyle \frac{ 2 m_{e} }{ m_p } {\displaystyle \left (  1 - \beta^{2} \right ) }^{-  \frac{1}{2} } + {\displaystyle \left ( \displaystyle \frac{ m_{e} }{ m_p } \right )}^{2} \right ]}^{-1}
+\label{W}
+\end{equation}
+is the largest possible energy loss by the proton in a single collision with a free electron, $m_p$ the proton mass, $\beta = v / c $ and $c$ the velocity of light in vacuum. However, as the proton kinetic energy decreases while propagating in the material, the contribution to the stopping power from interactions with bound atomic electrons in the K, L, M, ...-shells decreases and a correction term $C/Z$ must be taken into account; see `@Walske:1952` for K-shell corrections, `@Khandelwal:1968` for L-shell corrections  and `@Bichsel:1991`, `Bichsel:1992`, `Bichsel:1983` for M-shell corrections and above. Also, for relativistic proton kinetic energies, the stopping power is reduced due to the resulting electrical polarization of the medium `@Fermi:1940`, `@Sternheimer:1952`, `@Sternheimer:1982`. It is called the density effect correction because it increases with the electron density.  However, considering only non-relativistic protons, this term can be neglected in all the following.  The stopping number correction $L_1$ is the Barkas correction accounting for discrepancies between negatively and positively charged projectiles `@Barkas:1956`, `@Barkas:1963`. Finally, the second stopping number correction $L_2$ provides the valid electronic stopping power expression when the proton velocity is large compared to the velocity of bound atomic electrons `@Bloch:1933`, `@Bohr:1948`. The contribution of collisions with atomic nuclei 
+\begin{equation}
+{ \displaystyle \left (  \frac{d \varepsilon}{ds} \right )}_{\mathrm{nuc}} = n_{\mathrm{nuc}}  \int \Delta \varepsilon  d \sigma_{\mathrm{nuc}}
+\label{Nuclear_stopping_power}
+\end{equation}
+to the proton slowing down is much smaller since the recoil energy 
+\begin{equation}
+\Delta  \varepsilon =  
+\displaystyle \frac{ 4 \varepsilon \mu^2 }{ m_p m_{\mathrm{nuc}} }\sin^{2}{ \displaystyle \left ( \displaystyle \frac{ \theta}{ 2 } \right ) }  
+\label{W_Nuclear}
+\end{equation}
+received by the target atom nucleus is small. Here,  $ \mu =  m_p m_{\mathrm{nuc}} / \displaystyle \left ( m_{\mathrm{nuc}} + m_p \right )$  and $\theta$ are respectively the effective proton mass and its deflection angle in the collision center-of-mass frame, $d \Omega = 2 \pi \sin{\theta} d \theta$ and 
+\begin{equation}
+\label{Mott}
+{\displaystyle \left ( \displaystyle \frac{ d \sigma }{ d \Omega }  \right ) }_{\mathrm{nuc}}= \displaystyle \frac{ Z^2 e^4  }{ 4 \mu^2  v^4 \sin^4{ \displaystyle \left ( \displaystyle \frac{\theta}{2} \right ) } } \displaystyle \left [ 1 - \beta^2  \sin^2{ \displaystyle \left ( \displaystyle \frac{\theta}{2} \right ) }  \right ] 
+\end{equation}
+is the differential cross section obtained by `@Mott:1932`. However, the Bethe theory (\ref{Bethe}) breaks down when the proton velocity is much lower than the orbital electron velocities. `@VarelasBiersack:1970` compiled many experimental and theoretical results `@Lindhard:1964`, `@Newton:1975`, `@AndersenZiegler:1977` and provide a fitting formula for the electronic stopping power contribution in this low velocity regime.
+     
+In a compound, the stopping power for a proton can be approximated by a linear combination of stopping powers in each element constituents taken separately. If we note $\rho$ the compound mass density, this so-called Bragg's additivity rule `@BraggKleeman:1905` reads 
+\begin{equation}
+\displaystyle \frac{d \varepsilon}{ds} = \sum_{j} \omega_{j} {\displaystyle \left ( \displaystyle \frac{d \varepsilon}{ds} \right )}_{j}.
+\end{equation}
+Here $ {\left ( d \varepsilon / ds \right )}_j $ is the stopping power for a proton in the element constituent $j$  at ambient conditions and 
+each linear coefficient $ \omega_j = \mathrm{w}_j  \rho /  \rho_{j} $ depends on its fraction by weight $\mathrm{w}_j $ and its density $\rho_j$.  
 
 # Figures
 
-Figures can be included like this:
-![Caption for example figure.\label{fig:example}](figure.png)
-and referenced from text using \autoref{fig:example}.
-
-Figure sizes can be customized by adding an optional second parameter:
-![Caption for example figure.](figure.png){ width=20% }
+![Screenshot of SPAM GUI concerning the stopping power of non-relativistic protons in a scintillator
+(vinyltoluene-based solid at room temperature) and the corresponding range of a proton with an initial kinetic
+energy of 10 MeV.\label{fig:spam}](SPAM.png)
 
 # Acknowledgements
 
-We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
-Oh, and support from Kathryn Johnston during the genesis of this project.
+I acknowledge the contributions from Marine Huault for having use the code in order to calibrate a HD-V2 Gafchromic films stack to proton dose response and the subsequent development of a numerical tool to characterize the 2D-resolved kinetic energy spectra of laser-generated Target Normal Sheat Acceleration protons.
 
 # References
