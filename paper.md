@@ -21,7 +21,7 @@ bibliography: paper.bib
 
 # Summary
 
-SPAM (Stopping Power of Protons and Alpha particles in Ambiant Matter) is a python tool using Tkinter, PIL, Numpy and Matplotlib packages that allows for visualizing, printing and saving the stopping power and/or the Bragg's peak of protons or alpha particles in ambiant matter. The code has been benchmarked against the NIST databases (https://physics.nist.gov/PhysRefData/Star/Text/PSTAR.html and https://physics.nist.gov/PhysRefData/Star/Text/ASTAR.html).
+SPAM (Stopping Power of Protons and Alpha particles in Ambiant Matter) is a Python tool using Tkinter, PIL, Numpy and Matplotlib packages that allows for visualizing, printing and saving the stopping power and/or the Bragg's peak of protons or alpha particles in ambiant matter. The code has been benchmarked against the NIST databases (https://physics.nist.gov/PhysRefData/Star/Text/PSTAR.html and https://physics.nist.gov/PhysRefData/Star/Text/ASTAR.html).
 
 # Statement of need
 
@@ -86,6 +86,6 @@ energy of 10 MeV.\label{fig:spam}](SPAM.png)
 
 # Acknowledgements
 
-I acknowledge the contributions from Marine Huault for having use the code in order to calibrate a HD-V2 Gafchromic films stack to proton dose response and the subsequent development of a numerical tool to characterize the 2D-resolved kinetic energy spectra of laser-generated Target-Normal-Sheat-Accelerated (TNSA) protons.
+I acknowledge the contributions from Marine Huault for having used the code in order to calibrate a HD-V2 Gafchromic films stack to proton dose response and the consequent development that we did of a numerical tool in order to characterize 2D-resolved kinetic energy spectrae of laser-generated Target-Normal-Sheat-Accelerated protons.
 
 # References
