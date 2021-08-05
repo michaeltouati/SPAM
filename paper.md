@@ -89,5 +89,3 @@ energy of 10 MeV.\label{fig:spam}](SPAM.png)
 I acknowledge the contributions from Marine Huault for having use the code in order to calibrate a HD-V2 Gafchromic films stack to proton dose response and the subsequent development of a numerical tool to characterize the 2D-resolved kinetic energy spectra of laser-generated Target Normal Sheat Acceleration protons.
 
 # References
-
-\bibliography{paper}
