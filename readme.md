@@ -1,5 +1,3 @@
-[![status](https://joss.theoj.org/papers/a473bd641429cfea4d89d489478b08bf/status.svg)](https://joss.theoj.org/papers/a473bd641429cfea4d89d489478b08bf)
-
 # SPAM
 Written by Dr M Touati - CLPU - September 2019 - 
 mtouati@clpu.es
