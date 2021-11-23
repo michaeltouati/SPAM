@@ -1,6 +1,7 @@
 [<img src='https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54' height="20">](https://www.python.org/)
 [<img src='https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white' height="20">](https://numpy.org/)
 [<img src='https://matplotlib.org/_static/logo2_compressed.svg' height="20">](https://matplotlib.org/stable/index.html#)
+[<img src='https://python-pillow.org/images/pillow-logo.png' height="20">](https://python-pillow.org/)
 [<img src='https://mpng.subpng.com/20180408/xze/kisspng-wing-ide-integrated-development-environment-python-raspberry-5aca9cd85768a8.1913876415232278643581.jpg' height="20">](https://docs.python.org/3/library/tkinter.html)
 [<img src='https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white' height="20">](https://www.latex-project.org//)
 [![License : GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
