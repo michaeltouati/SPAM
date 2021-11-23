@@ -16,8 +16,8 @@ It needs the following Python packages :
 The next release will take into account the angular scattering of protons and alpha particles using a Monte-Carlo approach. 
 
 In order to use it, download or clone it and just type
-'''sh
+´´´sh
 python3 spam.py
-'''
+´´´
 The tkinter window will pop up.
 
