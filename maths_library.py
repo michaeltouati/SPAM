@@ -3,7 +3,7 @@
 ##  Stopping Power of Protons and Alpha particles in Ambiant Matter  ##
 ##                              (SPAM)                               ##
 ##                                                                   ##
-## Copyright © 2020 Michaël J TOUATI                                 ##
+## Copyright © 2019 Michaël J TOUATI                                 ##
 ##                                                                   ##
 ## This file is part of ESVM.                                        ##
 ##                                                                   ##
