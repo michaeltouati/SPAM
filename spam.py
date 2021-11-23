@@ -5,7 +5,7 @@
 ##                                                                   ##
 ## Copyright © 2019 Michaël J TOUATI                                 ##
 ##                                                                   ##
-## This file is part of ESVM.                                        ##
+## This file is part of SPAM.                                        ##
 ##                                                                   ##
 ## SPAM is free software: you can redistribute it and/or modify      ##
 ## it under the terms of the GNU General Public License as published ##
