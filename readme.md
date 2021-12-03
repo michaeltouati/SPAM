@@ -16,6 +16,7 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaeltouati/SPAM/master?labpath=example.ipynb)
 
 ## SPAM
+
 # Written by Michaël TOUATI  - 09/27/2019
 
 <p align="center">
