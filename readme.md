@@ -40,4 +40,4 @@ python3 spam.py
 
 The tkinter window will pop up. 
 
-An example about how to compute the stopping power and range of a projectile in an arbitrary compound material at ambient conditions can be found by following the binder interactive notebook badge link.
+An example about how to compute the stopping power and range of a projectile in an arbitrary compound material at ambient conditions can be found by following the [binder interactive notebook badge link](https://mybinder.org/v2/gh/michaeltouati/SPAM/master?labpath=example.ipynb).
