@@ -17,7 +17,7 @@
 
 # Written by Michaël TOUATI  - 09/27/2019
 
-[SPAM](https://github.com/michaeltouati/SPAM) (Stopping Power of Protons and Alpha particles in Ambiant Matter) is a python tool allowing for printing and saving the stopping power and/or the Bragg's peak of protons or alpha particles in ambiant matter. Equations computed by [SPAM](https://github.com/michaeltouati/SPAM) are detailed in the spam.pdf file. The comparisons with [PSTAR](https://physics.nist.gov/PhysRefData/Star/Text/PSTAR.html) and [ASTAR](https://physics.nist.gov/PhysRefData/Star/Text/ASTAR.html) NIST databases that has been used to validate SPAM can be found in the benchmarks.tar.xz file. The next release will take into account the angular scattering of protons and alpha particles using a Monte-Carlo approach. 
+[SPAM](https://github.com/michaeltouati/SPAM) (Stopping Power of Protons and Alpha particles in Ambiant Matter) is a python tool allowing for printing and saving the stopping power and/or the Bragg's peak of protons or alpha particles in ambiant matter. Equations computed by [SPAM](https://github.com/michaeltouati/SPAM) are detailed in the spam.pdf file. The comparisons with [PSTAR](https://physics.nist.gov/PhysRefData/Star/Text/PSTAR.html) and [ASTAR](https://physics.nist.gov/PhysRefData/Star/Text/ASTAR.html) NIST databases that has been used to validate SPAM can be found in the [benchmarks.tar.xz](https://github.com/michaeltouati/SPAM/blob/master/benchmarks.tar.xz) file. The next release will take into account the angular scattering of protons and alpha particles using a Monte-Carlo approach. 
 
 # Screenshot
 
@@ -45,7 +45,7 @@ The tkinter window will pop up.
 
 # Jupyter notebook example
 
-An [example](example.pynb) about how to compute the stopping power, range and Bragg peak curve of a projectile in a compound material at ambient conditions, that is not yet implemented, can be found and run by using the [binder interactive notebook](https://mybinder.org/v2/gh/michaeltouati/SPAM/master?labpath=example.ipynb).
+An [example](https://github.com/michaeltouati/SPAM/blob/master/example.pynb) about how to compute the stopping power, range and Bragg peak curve of a projectile in a compound material at ambient conditions, that is not yet implemented, can be found and run by using the [binder interactive notebook](https://mybinder.org/v2/gh/michaeltouati/SPAM/master?labpath=example.ipynb).
 
 # License
 [SPAM](https://github.com/michaeltouati/SPAM) is distributed under the terms of the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. 
