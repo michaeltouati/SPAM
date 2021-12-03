@@ -45,7 +45,7 @@ The tkinter window will pop up.
 
 # Jupyter notebook example
 
-Also, an example about how to compute the stopping power, range and Bragg peak curve of a projectile in an arbitrary compound material at ambient conditions can be found by following the [binder interactive notebook badge link](https://mybinder.org/v2/gh/michaeltouati/SPAM/master?labpath=example.ipynb).
+An example about how to compute the stopping power, range and Bragg peak curve of a projectile in an arbitrary compound material at ambient conditions can be found and run by using the [binder interactive notebook](https://mybinder.org/v2/gh/michaeltouati/SPAM/master?labpath=example.ipynb).
 
 # License
 [SPAM](https://github.com/michaeltouati/SPAM) is distributed under the terms of the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. 
