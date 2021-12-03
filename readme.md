@@ -15,8 +15,7 @@
 [![Closed pull requests](https://img.shields.io/github/issues-pr-closed/michaeltouati/SPAM)](https://github.com/michaeltouati/SPAM/pulls)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaeltouati/SPAM/master?labpath=example.ipynb)
 
-# SPAM
-## Written by Michaël TOUATI  - 09/27/2019
+# Written by Michaël TOUATI  - 09/27/2019
 
 <p align="center">
   <img width="800" height="450" src="spam.png">
@@ -41,3 +40,6 @@ python3 spam.py
 The tkinter window will pop up. 
 
 Also, an example about how to compute the stopping power, range and Bragg peak curve of a projectile in an arbitrary compound material at ambient conditions can be found by following the [binder interactive notebook badge link](https://mybinder.org/v2/gh/michaeltouati/SPAM/master?labpath=example.ipynb).
+
+# License
+[SPAM](https://github.com/michaeltouati/SPAM) is distributed under the terms of the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) license. 
