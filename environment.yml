@@ -1,6 +1,9 @@
 name: environment
 channels:
   - conda-forge
+  - santosh4748
 dependencies:
   - numpy
   - matplotlib
+  - pillow
+  - tkinter
