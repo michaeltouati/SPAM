@@ -1,0 +1,9 @@
+name: environment
+channels:
+  - conda-forge
+dependencies:
+  - numpy
+  - matplotlib
+  - pillow
+  - tk
+  - tkinter
