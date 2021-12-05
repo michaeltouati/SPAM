@@ -14,7 +14,7 @@
 [![Open pull requests](https://img.shields.io/github/issues-pr/michaeltouati/SPAM)](https://github.com/michaeltouati/SPAM/pulls)
 [![Closed pull requests](https://img.shields.io/github/issues-pr-closed/michaeltouati/SPAM)](https://github.com/michaeltouati/SPAM/pulls)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaeltouati/SPAM/master?labpath=example.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaeltouati/SPAM/master?labpath=spam.py)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/michaeltouati/SPAM/master?labpath=spam.ipynb)
 
 # Written by Michaël TOUATI  - 09/27/2019
 
