@@ -29,7 +29,7 @@
 
 SPAM needs the following Python packages :
 - tkinter
-- pillow 
+- pillow (with imagetk module)
 - numpy 
 - matplotlib
 
