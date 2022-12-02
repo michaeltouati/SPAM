@@ -1,6 +1,6 @@
 #######################################################################
 ##                                                                   ##
-##  Stopping Power of Protons and Alpha particles in Ambiant Matter  ##
+##  Stopping Power of Protons and Alpha particles in Ambient Matter  ##
 ##                              (SPAM)                               ##
 ##                                                                   ##
 ## Copyright © 2019 Michaël J TOUATI                                 ##
