@@ -1,6 +1,6 @@
 #######################################################################
 ##                                                                   ##
-##  Stopping Power of Protons and Alpha particles in Ambiant Matter  ##
+##  Stopping Power of Protons and Alpha particles in Ambient Matter  ##
 ##                              (SPAM)                               ##
 ##                                                                   ##
 ## Copyright © 2019 Michaël J TOUATI                                 ##
@@ -528,7 +528,7 @@ def compute_plot_and_save_Bragg_peak(projectile_var,target_var,Eps_ini_var):
 root = Tk()
 
 # Frame's title
-root.title("Stopping Powers of Protons and Alpha particles in Ambiant Matter (SPAM) by Michael J TOUATI - 09/27/2019 - https://github.com/michaeltouati")
+root.title("Stopping Powers of Protons and Alpha particles in Ambient Matter (SPAM) by Michael J TOUATI - 09/27/2019 - https://github.com/michaeltouati")
 # Frame's properties
 mainframe = ttk.Frame(root, padding="200 200 200 200")
 mainframe.grid(column=2, row=11, sticky=(N, W, E, S))
