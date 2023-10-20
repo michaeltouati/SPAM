@@ -26,6 +26,7 @@ from tkinter import *
 from tkinter import ttk
 from PIL import ImageTk, Image
 import os
+import sys
 import os.path
 import numpy as np
 import matplotlib
